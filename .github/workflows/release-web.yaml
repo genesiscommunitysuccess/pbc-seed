@@ -1,0 +1,25 @@
+name: Build and Release webui packages
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'client/**/*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release-webui:
+    uses: genesislcap/platform-releases/.github/workflows/webui-branch-workflow.yml@master
+    name: Build and Release webui packages
+    with:
+      repository: genesislcap/reporting-server
+      release-branch: master
+    secrets:
+      JFROG_USERNAME : ${{ secrets.JFROG_USERNAME }}
+      JFROG_PASSWORD : ${{ secrets.JFROG_PASSWORD }}
+      NPM_PUBLISH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+      GITHUB_REPO_READ_TOKEN: ${{ secrets.GPR_READ_TOKEN }}
+      GITHUB_REPO_WRITE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
