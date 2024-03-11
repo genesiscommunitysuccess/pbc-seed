@@ -8,6 +8,8 @@
   "genxSeedConfig": {
     "exclude": [
       ".git",
+      ".idea",
+      ".gradle",
       "README.md",
       "CODEOWNERS"
     ],
@@ -27,7 +29,10 @@
           "Dockerfile",
           "product-info",
           ".kt",
-          ".md"
+          ".md",
+          ".json",
+          ".ts",
+          ".properties"
         ]
       }
     }
