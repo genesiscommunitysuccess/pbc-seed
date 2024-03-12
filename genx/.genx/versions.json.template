@@ -3,7 +3,6 @@
     "foundationUI": "@foundationVersion@",
     "gsf": "@genesisVersion@"
   },
-  ,
     "dependencies": {
       "{{appName}}ClientVersion": "@client.version@",
       "{{appName}}ServerVersion": "@server.version@"
