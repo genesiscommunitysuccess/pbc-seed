@@ -47,7 +47,8 @@ export class Main extends FASTElement {
         /**
          * Send event to indicate some async work is happening. Will be picked up by overlay micro frontend.
          */
-        const remoteComponents = await Components.loadRemotes({});
+        const { registerComponents } = Components;
+        await registerComponents();
         this.ready = true;
     }
 
