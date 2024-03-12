@@ -1,7 +1,7 @@
 {
   "name": "{{groupId}}.pbc-{{appName}}-ui",
   "description": "Genesis PBC {{appName}} UI",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "SEE LICENSE IN license.txt",
   "main": "dist/esm/index.js",
   "types": "dist/{{appName}}.d.ts",
