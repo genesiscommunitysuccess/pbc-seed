@@ -16,7 +16,7 @@ module.exports = async (data, utils) => {
      */
     runPreRequisiteChecks(data, checks);
 
-    addUIDependency(data, '@genesislcap/pbc-{{appName}}-ui', versions.dependencies.pbcClientVersion);
+    addUIDependency(data, '@genesislcap/pbc-{{appName}}-ui', versions.dependencies.{{appName}}ClientVersion);
 
-    addServerDependency(data, {name: '{{appName}}'}, versions.dependencies.pbcServerVersion);
+    addServerDependency(data, {name: '{{appName}}'}, versions.dependencies.{{appName}}ServerVersion);
 };

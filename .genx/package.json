@@ -32,7 +32,8 @@
           ".md",
           ".json",
           ".ts",
-          ".properties"
+          ".properties",
+          "js"
         ]
       }
     }
