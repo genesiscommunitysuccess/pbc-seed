@@ -17,7 +17,6 @@
     "processFiles": {
       "exclude": [
         ".git",
-        ".genx",
         "node_modules",
         ".gradle",
         "gradle"
