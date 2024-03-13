@@ -31,16 +31,6 @@ export class Main extends FASTElement {
         logger.debug(`${name} is now connected to the DOM`);
 
         this.loadRemotes();
-
-        this.checkForSSOToken();
-    }
-
-    checkForSSOToken() {
-        const queryParams = new URLSearchParams(window.location.search);
-        const ssoToken = queryParams.get('SSO_TOKEN');
-        if (ssoToken) {
-            this.session.setSessionStorageItem('ssoToken', ssoToken);
-        }
     }
 
     async loadRemotes() {

@@ -15,7 +15,7 @@ jobs:
     uses: genesislcap/platform-releases/.github/workflows/webui-branch-workflow.yml@master
     name: Build and Release webui packages
     with:
-      repository: genesislcap/{{appName}}
+      repository: genesislcap/{{repoName}}
       release-branch: master
     secrets:
       JFROG_USERNAME : ${{ secrets.JFROG_USERNAME }}

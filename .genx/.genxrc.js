@@ -1,7 +1,7 @@
 module.exports = {
     details: () => ({
         nextStepsMessage: `
-{{appName}} has been converted to a PBC successfully 🎉
+Your app has been converted to a PBC successfully 🎉
 
 > Go into the (web) client directory with \`cd client\`
 
@@ -10,6 +10,6 @@ module.exports = {
 > Start the development server with \`npm run dev\`
 `
     }),
-    prompts: () => () => {},
+    prompts: () => require('./prompts'),
     configure: () => require('./configure'),
 };

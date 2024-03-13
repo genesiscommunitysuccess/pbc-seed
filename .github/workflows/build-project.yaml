@@ -8,7 +8,7 @@ jobs:
   build:
     uses: genesislcap/platform-releases/.github/workflows/product-gradle-pr-build.yaml@master
     with:
-      repository: genesislcap/{{appName}}
+      repository: genesislcap/{{repoName}}
       branch-ref: ${{ github.event.pull_request.head.sha }}
     secrets:
       JFROG_RO_USER : ${{ secrets.JFROG_RO_USER }}
