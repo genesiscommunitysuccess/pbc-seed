@@ -30,11 +30,6 @@ plugins {
 
 genesis {
     projectType = ProjectType.PBC
-
-    dependencies {
-        dependency("global.genesis:auth:${extra.properties["authVersion"]}")
-    }
-
 }
 
 

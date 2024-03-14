@@ -3,6 +3,16 @@ module.exports = {
         nextStepsMessage: `
 Your app has been converted to a PBC successfully 🎉
 
+IMPORTANT:
+
+> Replace {{repoName}} with the name of your repository in the following files:
+\`.github/workflows/build-project.yaml\` (line 11)
+\`.github/workflows/release-web.yaml\` (line 18)
+
+> Remove \`bundleGeneratedClasses=true\` from server/gradle.properties
+
+Now you can do the following:
+
 > Go into the (web) client directory with \`cd client\`
 
 > Install the PBC dependencies with \`npm run bootstrap\`

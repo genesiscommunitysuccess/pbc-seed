@@ -33,8 +33,7 @@
           ".json",
           ".ts",
           ".properties",
-          "js",
-          "yaml"
+          "js"
         ]
       }
     }
