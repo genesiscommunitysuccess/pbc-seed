@@ -9,7 +9,7 @@ IMPORTANT:
 \`.github/workflows/build-project.yaml\` (line 11)
 \`.github/workflows/release-web.yaml\` (line 18)
 
-> Remove \`bundleGeneratedClasses=true\` from server/gradle.properties
+> Set \`bundleGeneratedClasses\` to \`false\` in server/gradle.properties
 
 Now you can do the following:
 
