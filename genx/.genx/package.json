@@ -7,7 +7,8 @@
   },
   "genxSeedConfig": {
     "exclude": [
-      "README.md"
+      "README.md",
+      "package.json"
     ],
     "persistAnswers": true,
     "processFiles": {
