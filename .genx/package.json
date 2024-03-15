@@ -1,0 +1,44 @@
+{
+  "name": "@genesislcap/pbc-seed-genx",
+  "version": "1.0.0",
+  "description": "Genesis PBC Seed Genx",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "genxSeedConfig": {
+    "exclude": [
+      ".git",
+      ".idea",
+      ".gradle",
+      "README.md",
+      "CODEOWNERS",
+      ".gitignore"
+    ],
+    "persistAnswers": true,
+    "processFiles": {
+      "exclude": [
+        ".git",
+        "node_modules",
+        ".gradle",
+        "gradle"
+      ],
+      "rename": true,
+      "interpolateVariables": {
+        "enabled": true,
+        "include": [
+          "Dockerfile",
+          "product-info",
+          ".kt",
+          ".md",
+          ".json",
+          ".ts",
+          ".properties",
+          "js"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "tslib": "^2.3.1"
+  }
+}

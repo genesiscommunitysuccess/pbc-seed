@@ -1,0 +1,10 @@
+{
+  "name": "{{pkgScope}}/pbc-{{appName}}-seed",
+  "version": "1.0.0",
+  "description": "Genesis {{appName}} PBC",
+  "license": "SEE LICENSE IN license.txt",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {}
+}
