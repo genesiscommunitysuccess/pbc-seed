@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm")
     id("org.jlleitschuh.gradle.ktlint") version "11.6.1"
     id("com.jfrog.artifactory")
-    id("org.sonarqube") version "5"
+    id("org.sonarqube") version "5.0.0.4638"
 }
 
 sonarqube {
