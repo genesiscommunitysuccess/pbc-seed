@@ -5,6 +5,25 @@ plugins {
     kotlin("jvm")
     id("org.jlleitschuh.gradle.ktlint") version "11.6.1"
     id("com.jfrog.artifactory")
+    id("org.sonarqube") version "4.4.1.3373"
+}
+
+sonarqube {
+    properties {
+        property("sonar.projectKey", "{{pkgScope}}_{{repoName}}")
+        property("sonar.projectName", "pbc-{{appName}}-server")
+        property("sonar.organization", "{{pkgScope}}")
+        property("sonar.host.url", "https://sonarcloud.io")
+        property("sonar.sourceEncoding", "UTF-8")
+    }
+}
+
+project(":{{appName}}-app") {
+    sonarqube {
+        properties {
+            property("sonar.sources", "src/main")
+        }
+    }
 }
 
 subprojects {
@@ -12,6 +31,7 @@ subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
     apply(plugin = "com.jfrog.artifactory")
+    apply(plugin = "org.sonarqube")
 
     ktlint {
         filter {
