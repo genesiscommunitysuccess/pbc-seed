@@ -14,7 +14,6 @@ subprojects {
     apply(plugin = "com.jfrog.artifactory")
 
     ktlint {
-        version.set("1.0.1")
         filter {
             exclude { element -> element.file.path.contains("generated") || element.file.path.contains("internal-modules") }
         }
