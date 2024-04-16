@@ -31,7 +31,6 @@ subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
     apply(plugin = "com.jfrog.artifactory")
-    apply(plugin = "org.sonarqube")
 
     ktlint {
         filter {
