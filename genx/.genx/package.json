@@ -32,7 +32,7 @@
     }
   },
   "dependencies": {
-    "@genesislcap/seed-utils": "~14.144.0",
+    "@genesislcap/seed-utils": "~14.173.3",
     "tslib": "^2.3.1"
   }
 }
