@@ -1,4 +1,9 @@
 pluginManagement {
+    val genesisVersion: String by settings
+    plugins {
+        id("global.genesis.pbc") version genesisVersion
+    }
+
     repositories {
         mavenCentral()
         gradlePluginPortal()

@@ -1,5 +1,5 @@
 plugins {
-    id("global.genesis.pbc") version "7.2.0-SNAPSHOT"
+    id("global.genesis.pbc")
 }
 
 tasks {
