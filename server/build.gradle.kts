@@ -40,7 +40,6 @@ subprojects {
 
     dependencies {
         testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-        implementation("com.h2database:h2:2.2.224")
         implementation(platform("global.genesis:genesis-bom:${properties["genesisVersion"]}"))
     }
     tasks {
