@@ -9,6 +9,8 @@ export const main: AppRoute = {
     path: '{{appName}}',
     name: '{{appName}}',
     element: async () => (await import('@genesislcap/pbc-{{appName}}-ui')).Main,
+    // @ts-ignore
+    elementTag: 'foundation-{{appName}}',
     settings: { autoAuth: true, maxRows: 500 },
     navItems: [
         {
