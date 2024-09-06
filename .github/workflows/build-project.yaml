@@ -10,6 +10,7 @@ jobs:
     with:
       repository: genesislcap/{{repoName}}
       branch-ref: ${{ github.event.pull_request.head.sha }}
+      target-branch-ref: ${{ github.event.pull_request.base.ref }}
     secrets:
       JFROG_RO_USER : ${{ secrets.JFROG_RO_USER }}
       JFROG_RO_PASSWORD : ${{ secrets.JFROG_RO_PASSWORD }}
